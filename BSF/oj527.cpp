@@ -18,7 +18,7 @@ char mmap[105][105];
 int dir[4][2] = {0,1,1,0,0,-1,-1,0};
 
 int main() {
-    cin >> n >> m >> D;
+    cin >> n >> m >> d;
     for (int i = 1; i <= n; i++) {
         cin >> &mmap[i][1];
     }
@@ -29,7 +29,7 @@ int main() {
     }
     while(!que.empty()) {
         node temp = que.front();
-        que,pop();
+        que.pop();
         for (int i = 0; i < 4 ;i++) {
             for (int j = 2; j <= temp.d; j++) {
                 int x = temp.x + j * dir[i][0];
